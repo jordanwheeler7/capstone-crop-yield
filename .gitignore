@@ -1,0 +1,93 @@
+# ================= INSTRUCTOR-GENERATED FILE ================
+# Source: https://github.com/denisecase/nw-diagnostics-python/
+# ============================================================
+#
+# ============================================================
+# Basic .gitignore for Python projects with VS Code 
+# This file helps specify which files should not be 
+# tracked by git, and not added to the repository.
+# ============================================================
+
+# ============================================================
+# Virtual Environments
+# ============================================================
+# Generally, exclude virtual environments from version control.
+# They can be regenerated from a requirements.txt file and tend to be large.
+# .venv is a common name for virtual environments.
+.venv/
+venv/
+env/
+.env.toml
+# ============================================================
+# Secrets
+# ============================================================
+# NEVER commit secrets. It's a security risk.
+# .env is often used to hold environment variables and secrets.
+.env  
+
+# ============================================================
+# Python Artifacts
+# ============================================================
+# Compiled python files.
+__pycache__/
+*.pyc
+*.pyo
+
+# Packaging artifacts.
+*.egg-info/
+dist/
+build/
+
+# ============================================================
+# Editor - Visual Studio Code
+# ============================================================
+# Visual Studio Code adds settings and cache directories 
+# that are generally kept out of the repository.
+.vscode/*
+.history/
+
+# ============================================================
+# macOS System Files
+# ============================================================
+# macOS adds various hidden files to directories. 
+# These are typically excluded from the repository.
+.DS_Store
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+
+# ============================================================
+# Backup & Temporary Files
+# ============================================================
+# These may be added by text editors and some tools. 
+# These are typically excluded from the repository.
+*~
+*.bak
+*.swp
+*.swo
+
+# ============================================================
+# Logs & Databases
+# ============================================================
+# Logs and databases can get large and are typically excluded.
+# For some projects, it may be useful to track these files.
+# Comment out lines as needed to include them.
+# *.log
+# *.sql
+# *.sqlite
+
+# ============================================================
+# Node Modules
+# ============================================================
+# If your project ever uses something from Node.js (like 
+# some front-end libraries or tools), you might end up with
+# a node_modules directory.
+node_modules/
+
+# ============================================================
+# End of .gitignore
+# ============================================================

@@ -45,7 +45,7 @@ build/
 # that are generally kept out of the repository.
 .vscode/*
 .history/
-
+.ipynb_checkpoints/
 # ============================================================
 # macOS System Files
 # ============================================================
@@ -87,6 +87,8 @@ build/
 # some front-end libraries or tools), you might end up with
 # a node_modules directory.
 node_modules/
+
+
 
 # ============================================================
 # End of .gitignore

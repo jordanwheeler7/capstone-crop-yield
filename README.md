@@ -32,20 +32,25 @@ This project followed a standardized approach to a Data Science topic as shown i
 * Once there, type `jupyter lab` in the terminal. If a browser does not automatically pop up, use `CTRL + Click` on the link provided.
 
 ## Data Loading
-After initial setup, the data was loaded into the notebook using the pandas module for Python.
+* After initial setup, the data was loaded into the notebook using the pandas module for Python.
 ![Loading Data](Images/Loading_Data.png)
-Each of the datasets were then explored to see what fields we would need to add from them. The first dataset was yield. We examined it and created the function, fields_needed.
+* Each of the datasets were then explored to see what fields we would need to add from them. The first dataset was yield. We examined it and created the function, fields_needed.
 ![Data Yield](Images/Inspect_Yield.png)
-Temperature was then examined and the columns were renamed to match the yield dataset.
+* Temperature was then examined and the columns were renamed to match the yield dataset.
 ![Temperature](Images/Inspect_Temperature.png)
-Precipitation was looked at and all fields were applicable.
+* Precipitation was looked at and all fields were applicable so there was no adjustments that had to be made.
 ![Precipitation](Images/Inspect_Precipitation.png)
-Pesticides was the last set to be looked at. Columns had to be dropped as all of the element, unit, and item were the same for all fields.
+* Pesticides was the last set to be looked at. Columns had to be dropped as all of the element, unit, and item were the same for all fields.
 ![Pesticides](Images/Inspect_Pesticides.png)
-With all columns matching, the data was ready to be merged into on dataframe for ease of use.
+* With all columns matching, the data was ready to be merged into on dataframe for ease of use.
 ![Merged Data](Images/Merge_Data.png)
-The data was then written a new CSV file and inspected to ensure that it was appearing how it was intended to look.
+* The data was then written a new CSV file and inspected to ensure that it was appearing how it was intended to look.
 ![Data Inspection](Images/Create_DF_DF Info.png)
 
-
-
+## Exploratory Data Analysis (EDA)
+* The first step in the EDA was to examine the numerical and categorical features.
+  ![Numerical](Images/Numerical_Statistics.png)
+  ![Categorical](Images/Categorical_Statistics.png)
+* The data was then looked at through the lens of histograms. The year feature was multimodal indicating that we have more records in some years than we do in others. Yield and pesticide usage were skewed left suggesting that higher yields and pesticide usage were a more rare occurrence. Both did have a slight tail to the right indicating that there is outlier data points. Finally, the temperature histogram showed that it was skewed right indicating that warmer temperatures occur more frequently in the data.
+* After viewing the data, in order to prevent outlier data points, any country that contained less than 100 records was removed.
+  ![Removal](

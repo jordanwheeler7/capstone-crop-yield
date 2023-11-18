@@ -6,7 +6,9 @@ The goal of this project is to build a model that can determine the maximum crop
 
 
 ## Introduction
-This project followed a standardized approach to a Data Science topic. It began by defining the scenario that the research would take place on. Once completed, data collection and preparation took place. After cleaning the data, it was then extracted, transformed, and loaded into a Jupyter Notebook file. From there, an exploratory analysis took place to tell what was happening with the data and get a better understanding of what we were working with. Once an understanding was had, model building and testing took place. The goal of this area was to find a model that would give accurate results and did not under or over fit the data. The models and their uses were explained and insights from the models were explored. Finally, the project looked at limitations with the models and future uses. For a more in depth review on these, please visit the [Overleaf](https://www.overleaf.com/read/kshnchhyhycm#1a66e0) report.
+This project followed a standardized approach to a Data Science topic as shown in the image below. It began by defining the scenario that the research would take place on. Once completed, data collection and preparation took place. After cleaning the data, it was then extracted, transformed, and loaded into a Jupyter Notebook file. From there, an exploratory analysis took place to tell what was happening with the data and get a better understanding of what we were working with. Once an understanding was had, model building and testing took place. The goal of this area was to find a model that would give accurate results and did not under or over fit the data. The models and their uses were explained and insights from the models were explored. Finally, the project looked at limitations with the models and future uses. For a more in depth review on these, please visit the [Overleaf](https://www.overleaf.com/read/kshnchhyhycm#1a66e0) report.
+
+![Process](Images/Process_Flow.png)
 
 ## Files Used
 * [pesticides](Data/pesticides.csv): Contains the information about pesticide usage in tonnes for each country per year.
@@ -29,7 +31,21 @@ This project followed a standardized approach to a Data Science topic. It began 
 * After creating the virtual environment use `pip install -r requirements.txt` in the terminal.
 * Once there, type `jupyter lab` in the terminal. If a browser does not automatically pop up, use `CTRL + Click` on the link provided.
 
-## Data Loading and Exploring
+## Data Loading
 After initial setup, the data was loaded into the notebook using the pandas module for Python.
-![Loading Data]((https://github.com/jordanwheeler7/capstone-crop-yield/blob/857b300777241d29ad437b0dfb0d84437102062a/Images/Loading%20Data.png)https://github.com/jordanwheeler7/capstone-crop-yield/blob/857b300777241d29ad437b0dfb0d84437102062a/Images/Loading%20Data.png)
+![Loading Data](Images/Loading_Data.png)
+Each of the datasets were then explored to see what fields we would need to add from them. The first dataset was yield. We examined it and created the function, fields_needed.
+![Data Yield](Images/Inspect_Yield.png)
+Temperature was then examined and the columns were renamed to match the yield dataset.
+![Temperature](Images/Inspect_Temperature.png)
+Precipitation was looked at and all fields were applicable.
+![Precipitation](Images/Inspect_Precipitation.png)
+Pesticides was the last set to be looked at. Columns had to be dropped as all of the element, unit, and item were the same for all fields.
+![Pesticides](Images/Inspect_Pesticides.png)
+With all columns matching, the data was ready to be merged into on dataframe for ease of use.
+![Merged Data](Images/Merge_Data.png)
+The data was then written a new CSV file and inspected to ensure that it was appearing how it was intended to look.
+![Data Inspection](Images/Create_DF_DF Info.png)
+
+
 

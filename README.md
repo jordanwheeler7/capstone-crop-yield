@@ -82,3 +82,18 @@ This project followed a standardized approach to a Data Science topic as shown i
 * The key insights gained in this part of the project suggests that there is not a linear relationship between the features in the data. The data all falls within a normal distribution indicating that no further transformation was needed. The outliers in the data were left in as they all fall within a normal range. The importance of the EDA helped decide the direction that was taken in the model building process.
 
 ## Model Building
+* The model building process utilized 5 different machine learning models. Each model had the data split into a training and testing set on an 80/20 split. To ensure that optimal parameters were present, GridSearchCV was ran for each model. Parameters were munipulated to ensure that all models were given a fair chance.
+* While a linear regression model was assumed to be a bad fit, the model was still ran to see its performance. Surprisingly, while the data did not suggest a linear relationship, the linear regression model fit put it right in the middle of the pact.
+* After viewing the linear regression, the data was prepared and split. This step involved first defining our features whether categorical or numerical. Then encoding categorical features with OneHotEncoder. The data was then split with `X_transformed = preprocessor.fit_transform(X)` followed by `X_train, X_test, y_train, y_test = train_test_split(X_transformed, y, test_size=0.2, random_state=42)`.
+* The first model ran was the RandomForestRegressor followed by Gradient Boost, Decision Tree, K-Nearest Neighbors, and finally a Neural Network.
+  * ![RandomForest](Images/RF.png)
+  * ![Gradient Boost](Images/Gradient_Boost.png)
+  * ![Decision Tree](Images/Decision_Tree.png)
+  * ![KNN](Images/KNN.png)
+  * ![NN](Images/NN.png)
+* Each of these models were ran and the Mean Squared Error, Root Mean Squared Error, Mean Average Error, and R^2 values were accounted for. The goal was to have a model with a higher R^2 value for the training and test sets while not over or underfitting the data. After running the models initially, the Random Forest and Decision Tree both contained high R^2 values. The decision tree was slightly higher and had a lower MSE, RMSE, and MAE on the test sets. However, the training sets for those values were way higher suggesting that it was overfitting the data. The Random Forest also had a significant drop in effectiveness between the training and test sets with the MAE, RMSE, and MSE. 
+* To ensure that the models were trained as good as possible, Grid Search CV was ran so that we could find the optimal parameters.
+  ![Parameter Tuning](Images/Param_Tune.png)
+* After adjusting the parameters and finding the optimal solution, we received the results in the image below.
+  * ![Opitmal](Images/Best_Param.png)
+* After reviewing the results, the optimal method to use is the Gradient Boost method. Utilizng the 4 measurements to evaluate our models gives us the best information. Had the R2 been the only measurement considered, the Random Forest or Decision Tree would seem like the better choice. However, the Gradient Boost still performs well and has a less significant difference between the test and training set indicating that it has the best overall fit.

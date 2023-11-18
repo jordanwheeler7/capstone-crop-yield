@@ -1,5 +1,6 @@
 # Crop Yield Estimator
-Jordan Wheeler, Data Analytics Capstone Project 80/81FA23
+### Jordan Wheeler
+### Data Analytics Capstone Project 80/81FA23
 
 ## Project Goal
 The goal of this project is to build a model that can determine the maximum crop yield that can be obtained given a set of parameters. This is a widely discussed topic within the Agriculture industry as improving crop yield reduces costs and helps provide sustanence for an ever growing population. This project focuses on trying to identify the best scenario to maximize crop yields while enabling a more sustainable form of Agriculture while reducing the environmental impacts. The full report can be read on [Overleaf](https://www.overleaf.com/read/kshnchhyhycm#1a66e0).

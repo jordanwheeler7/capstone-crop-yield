@@ -1,5 +1,5 @@
 # Crop Yield Estimator
-### Jordan Wheeler
+### [Jordan Wheeler](https://github.com/jordanwheeler7)
 ### Data Analytics Capstone Project 80/81FA23
 
 ## Project Goal

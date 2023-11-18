@@ -4,3 +4,7 @@ missingno
 seaborn
 matplotlib
 scikit-learn
+plotly
+statsmodels
+xgboost
+IPython

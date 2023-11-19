@@ -97,4 +97,4 @@ This project followed a standardized approach to a Data Science topic as shown i
 * After adjusting the parameters and finding the optimal solution, we received the results in the image below.
   * ![Opitmal](Images/Best_Param.png)
   * ![Results](Images/Model_Performance.png)
-* After reviewing the results, the optimal method to use is the Gradient Boost method. Utilizng the 4 measurements to evaluate our models gives us the best information. Had the R2 been the only measurement considered, the Random Forest or Decision Tree would seem like the better choice. However, the Gradient Boost still performs well and has a less significant difference between the test and training set indicating that it has the best overall fit.
+* After reviewing the results, Random Forest and Gradient Boost seemed to perform the best on the data regarding generalization and high accuracy. The Decision Tree and KNN models seemed to overfit the data while the Neural Network underperformed. This could be due to a lack of complexity within the data. The linear regression model provides a good baseline as it provides consistent predictions although they are less accurate.

@@ -124,19 +124,11 @@ This project followed a standardized approach to a Data Science topic as shown i
  * This project utilized 6 different regression methods to attempt to predict the yield for 10 different crops using information on crop yield, pesticide use, average precipitation, average temperature, and crop type. The Gradient Boost method was chosen for the higher recall on unseen data and that it generalized the information between training and test sets better than all other models used. The model was tuned to provide the best possible results which led to an impressive 99.9% accuracy rating on the training set and a 97.8% accuracy on the test set. Furthermore, the model showed the lowest variance in the Mean Absolute Error, Mean Squared Error, and Root Mean Squared Error, showing the ability to generalize the data better than all other models used. Given the same information that this model was trained on, it would be suitable to provide a prediction on the yield you could expect from each crop.
 
 ## References
-1. Databank, T.W.: Climate change overview: Country summary. [https://www.fao.
-org/faostat/en/dat]” (2023), accessed on October 20, 2023
-2. Food, of the United Nations, A.O.: Faostat. [https://www.fao.org/faostat/en]/”
-(2023), accessed on October 20, 2023
-3. Geopard: Predicting crop yield with remote sensing data (202[3), https://geopard.
-tech/blog/predicting-crop-yield-with-remote-sensing-]data/, accessed: 2023-11-21
-4. Jupyter, P.: Project Jupyter: Open source software for interactive computing (2023),
-https://jupyter.org/, accessed: 2023-11-02
-5. OECD: Crop prod[ction. ”https://data.oecd.org/agroutput/crop-product]on.html”
-(2023), accessed on October 25, 2023
-6. Ritchie, H., Rosado, P., Roser, M.: Crop yields. Our World in Dat[a (2022), https:
-//ourworldindata.org/]crop-yields, accessed on October 20, 2023
-7. pandas development team, T.: pandas: Powerful data structures for data analy[sis
-(2023), https://panda]s.pydata.org/, accessed: 2023-11-02
-8. USDA: Food security status of u.s. households in 2022. [https://wwwers.usda.gov/
-topics/food-nutrition-assistance/food-security-in-the-u-s/key-statitics-graphics/#:∼:text=89.8%20percent%20(118.5%20million)%20of,from%289.5%20percent%20in%202020] (2023), accessed on October 25, 2023
+1. [Databank, T.W.: Climate change overview: Country summary](https://www.fao.org/faostat/en/data) (2023), accessed on October 20, 2023
+2. [Food, of the United Nations, A.O.: Faostat](https://www.fao.org/faostat/en/) (2023), accessed on October 20, 2023
+3. [Geopard: Predicting crop yield with remote sensing data](https://geopard.tech/blog/predicting-crop-yield-with-remote-sensing-data/) (2023), accessed: 2023-11-21
+4. [Jupyter, P.: Project Jupyter: Open source software for interactive computing](https://jupyter.org/) (2023), accessed: 2023-11-02
+5. [OECD: Crop Production](https://data.oecd.org/agroutput/crop-production.html) (2023), accessed on October 25, 2023
+6. [Ritchie, H., Rosado, P., Roser, M.: Crop yields. Our World in Data](https://ourworldindata.org/crop-yields) (2022), accessed on October 20, 2023
+7. [pandas development team, T.: pandas: Powerful data structures for data analysis](https://pandas.pydata.org/) (2023), accessed: 2023-11-02
+8. [USDA: Food security status of U.S. households in 2022](https://www.sers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-u-s/key-statitics-graphics/#:∼:text=89.8%20percent%20(118.5%20million)%20of,from%289.5%20percent%20in%202020) (2023), accessed on October 25, 2023

@@ -32,6 +32,12 @@ This project followed a standardized approach to a Data Science topic as shown i
 * After creating the virtual environment use `pip install -r requirements.txt` in the terminal.
 * Once there, type `jupyter lab` in the terminal. If a browser does not automatically pop up, use `CTRL + Click` on the link provided.
 
+## Requirements
+1. Git
+2. Python 3.7+ (3.11+ preferred)
+3. VS Code Editor
+4. VS Code Extension: Python (by Microsoft)
+
 ## Data Loading
 * After initial setup, the data was loaded into the notebook using the pandas module for Python.
 ![Loading Data](Images/Loading_Data.png)
@@ -98,3 +104,39 @@ This project followed a standardized approach to a Data Science topic as shown i
   * ![Opitmal](Images/Best_Param.png)
   * ![Results](Images/Model_Performance.png)
 * After reviewing the results, Random Forest and Gradient Boost seemed to perform the best on the data regarding generalization and high accuracy. The Decision Tree and KNN models seemed to overfit the data while the Neural Network underperformed. This could be due to a lack of complexity within the data. The linear regression model provides a good baseline as it provides consistent predictions although they are less accurate.
+
+## Model Assessment
+* After choosing the Gradient Boost model, it was explored to see visualizations on the performance.
+* ![Features](Images/Feature_Importance.png)
+* ![Permutation Features](Images/Permutation_Feature_Graph.png)
+* The models show the importance of features. The second graph shows the permutation features. Permutation features are different than normal as they change the values and update the importance based on those that impact the model the most. The first chart shows that Crops, Climactic Features, and Region play a significant role. However, the second shows that crops and region are the 2 biggest factors.
+
+* ![CV](Images/Cross_Val.png)
+* ![Line CV](Images/Learning_Curve_Graph.png)
+* The CV and Learning Curve both share a common feature in the cross-validation feature. On the learning curve, the closer the curve gets to the cross-validation line, the better the model. The visualization aims to tell the users whether the model does better with small or large amounts of training data. The curve gets closer to the CV with more data suggesting it performs better when it has more data fed to it.
+
+* ![Scatter](Images/Scatter_Plot_Graph.png)
+* ![Residual](Images/Residual_Plot_Graph.png)
+
+* The final tests were ran using 2 different kinds of scatter plots. The first plots actual versus predicted values on a diaganol axis. The closer to the diagonal, the better the performance is. The second is similar except it plots a residual plot on a horizontal axis. The closer to the horizontal the better the model is  performing. Both models show that the model does well on the lower values but, it shows that as the values increase, the model performs worse. Both visuals also show that the models are overfitting slightly on the larger values.
+
+## Conclusions
+ * This project utilized 6 different regression methods to attempt to predict the yield for 10 different crops using information on crop yield, pesticide use, average precipitation, average temperature, and crop type. The Gradient Boost method was chosen for the higher recall on unseen data and that it generalized the information between training and test sets better than all other models used. The model was tuned to provide the best possible results which led to an impressive 99.9% accuracy rating on the training set and a 97.8% accuracy on the test set. Furthermore, the model showed the lowest variance in the Mean Absolute Error, Mean Squared Error, and Root Mean Squared Error, showing the ability to generalize the data better than all other models used. Given the same information that this model was trained on, it would be suitable to provide a prediction on the yield you could expect from each crop.
+
+## References
+1. Databank, T.W.: Climate change overview: Country summary. [https://www.fao.
+org/faostat/en/dat]” (2023), accessed on October 20, 2023
+2. Food, of the United Nations, A.O.: Faostat. [https://www.fao.org/faostat/en]/”
+(2023), accessed on October 20, 2023
+3. Geopard: Predicting crop yield with remote sensing data (202[3), https://geopard.
+tech/blog/predicting-crop-yield-with-remote-sensing-]data/, accessed: 2023-11-21
+4. Jupyter, P.: Project Jupyter: Open source software for interactive computing (2023),
+https://jupyter.org/, accessed: 2023-11-02
+5. OECD: Crop prod[ction. ”https://data.oecd.org/agroutput/crop-product]on.html”
+(2023), accessed on October 25, 2023
+6. Ritchie, H., Rosado, P., Roser, M.: Crop yields. Our World in Dat[a (2022), https:
+//ourworldindata.org/]crop-yields, accessed on October 20, 2023
+7. pandas development team, T.: pandas: Powerful data structures for data analy[sis
+(2023), https://panda]s.pydata.org/, accessed: 2023-11-02
+8. USDA: Food security status of u.s. households in 2022. [https://wwwers.usda.gov/
+topics/food-nutrition-assistance/food-security-in-the-u-s/key-statitics-graphics/#:∼:text=89.8%20percent%20(118.5%20million)%20of,from%289.5%20percent%20in%202020] (2023), accessed on October 25, 2023

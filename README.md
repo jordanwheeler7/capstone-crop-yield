@@ -2,6 +2,10 @@
 ### [Jordan Wheeler](https://github.com/jordanwheeler7)
 ### Data Analytics Capstone Project 80/81FA23
 
+
+## Abstract
+This project explores the application of machine learning to predict crop yields, focusing on ten crops and integrating data from organizations that report on global data. This project builds, trains and tests several machine learning models, including Linear Regression, Random Forest, Gradient Boost, Decision Tree, K-Nearest Neighbors, and Neural Networks. Data integrity is handled comprehensive preprocessing and analysis. The Gradient Boost model stands out for its accuracy in forecasting yields. The main findings indicate that crop type and regional factors influence yields the most, while climatic elements and pesticide usage have a surprisingly minimal impact. This project helps to establish a new outlook in agricultural predictive analytics and also challenges common assumptions in farming practices. It offers insights for sustainable agriculture, emphasizing the role of machine learning in enhancing crop production strategies. The research also recommends the inclusion of more diverse environmental variables like sunlight intensity and soil conditions to refine predictive models further for future use.
+
 ## Project Goal
 The goal of this project is to build a model that can determine the maximum crop yield that can be obtained given a set of parameters. This is a widely discussed topic within the Agriculture industry as improving crop yield reduces costs and helps provide sustanence for an ever growing population. This project focuses on trying to identify the best scenario to maximize crop yields while enabling a more sustainable form of Agriculture while reducing the environmental impacts. The full report can be read on [Overleaf](https://www.overleaf.com/read/kshnchhyhycm#1a66e0).
 

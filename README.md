@@ -104,6 +104,7 @@ This project followed a standardized approach to a Data Science topic as shown i
 * Each of these models were ran and the Mean Squared Error, Root Mean Squared Error, Mean Average Error, and R^2 values were accounted for. The goal was to have a model with a higher R^2 value for the training and test sets while not over or underfitting the data. After running the models initially, the Random Forest and Decision Tree both contained high R^2 values. The decision tree was slightly higher and had a lower MSE, RMSE, and MAE on the test sets. However, the training sets for those values were way higher suggesting that it was overfitting the data. The Random Forest also had a significant drop in effectiveness between the training and test sets with the MAE, RMSE, and MSE. 
 * To ensure that the models were trained as good as possible, Grid Search CV was ran so that we could find the optimal parameters.
   ![Parameter Tuning](Images/Param_Tune.png)
+  ![Parameter Tuning 2](Images/Param_Tune_2.png)
 * After adjusting the parameters and finding the optimal solution, we received the results in the image below.
   * ![Opitmal](Images/Best_Param.png)
   * ![Results](Images/Model_Performance.png)

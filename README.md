@@ -2,6 +2,10 @@
 ### [Jordan Wheeler](https://github.com/jordanwheeler7)
 ### Data Analytics Capstone Project 80/81FA23
 
+
+## Abstract
+This project explores the application of machine learning to predict crop yields, focusing on ten crops and integrating data from organizations that report on global data. This project builds, trains and tests several machine learning models, including Linear Regression, Random Forest, Gradient Boost, Decision Tree, K-Nearest Neighbors, and Neural Networks. Data integrity is handled comprehensive preprocessing and analysis. The Gradient Boost model stands out for its accuracy in forecasting yields. The main findings indicate that crop type and regional factors influence yields the most, while climatic elements and pesticide usage have a surprisingly minimal impact. This project helps to establish a new outlook in agricultural predictive analytics and also challenges common assumptions in farming practices. It offers insights for sustainable agriculture, emphasizing the role of machine learning in enhancing crop production strategies. The research also recommends the inclusion of more diverse environmental variables like sunlight intensity and soil conditions to refine predictive models further for future use.
+
 ## Project Goal
 The goal of this project is to build a model that can determine the maximum crop yield that can be obtained given a set of parameters. This is a widely discussed topic within the Agriculture industry as improving crop yield reduces costs and helps provide sustanence for an ever growing population. This project focuses on trying to identify the best scenario to maximize crop yields while enabling a more sustainable form of Agriculture while reducing the environmental impacts. The full report can be read on [Overleaf](https://www.overleaf.com/read/kshnchhyhycm#1a66e0).
 
@@ -100,6 +104,7 @@ This project followed a standardized approach to a Data Science topic as shown i
 * Each of these models were ran and the Mean Squared Error, Root Mean Squared Error, Mean Average Error, and R^2 values were accounted for. The goal was to have a model with a higher R^2 value for the training and test sets while not over or underfitting the data. After running the models initially, the Random Forest and Decision Tree both contained high R^2 values. The decision tree was slightly higher and had a lower MSE, RMSE, and MAE on the test sets. However, the training sets for those values were way higher suggesting that it was overfitting the data. The Random Forest also had a significant drop in effectiveness between the training and test sets with the MAE, RMSE, and MSE. 
 * To ensure that the models were trained as good as possible, Grid Search CV was ran so that we could find the optimal parameters.
   ![Parameter Tuning](Images/Param_Tune.png)
+  ![Parameter Tuning 2](Images/Param_Tune_2.png)
 * After adjusting the parameters and finding the optimal solution, we received the results in the image below.
   * ![Opitmal](Images/Best_Param.png)
   * ![Results](Images/Model_Performance.png)
